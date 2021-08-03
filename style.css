@@ -1,36 +1,47 @@
 body {
-    padding-top: 100px; /* ヘッダーの後ろに要素が隠れないようにするため */
+  padding-top: 100px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+header {
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 60px; /* 高さを50pxに指定 */
+  background: rgb(180, 180, 180); /* 背景色にグレーを指定 */
+  padding: 50px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  display: flex; /* 中の要素を横並びにする */
+  align-items: center; /* 中の要素を上下中央に並べる */
+}
+header .gnav .menu {
+  display: flex; /* 中の要素を横並びにする */
+}
+header .gnav .menu li {
+  list-style: none; /* リストの[・]を消す */
+}
+header .gnav .menu li + li {
+  margin-left: 60px; /* メニューそれぞれに間隔をあけるため */
+}
+body {
+    background-image:url(main背景.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 249, 249);
+    background-position: center;
+    font-family: 'Shippori Mincho', serif;
   }
-  header {
-    width: 100%; /* 幅いっぱいを指定 */
-    height: 50px; /* 高さを50pxに指定 */
-    background: #CCC; /* 背景色にグレーを指定 */
-    padding: 50px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
-    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
-    position: fixed; /* ウィンドウを基準に画面に固定 */
-    top: 0; /* 上下の固定位置を上から0pxにする */
-    left: 0; /* 左右の固定位置を左から0pxにする */
-    display: flex; /* 中の要素を横並びにする */
-    align-items: center; /* 中の要素を上下中央に並べる */
-  }
-  header .gnav .menu {
-    display: flex; /* 中の要素を横並びにする */
-  }
-  header .gnav .menu li {
-    list-style: none; /* リストの[・]を消す */
-  }
-  header .gnav .menu li + li {
-    margin-left: 60px; /* メニューそれぞれに間隔をあけるため */
-  }
-  main {
-    height: 150vw; /* スクロールの演出を見れるようにmainに高さを指定 */
-  }
-  body {
-      background-image:url(a000875377_02.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-color: rgb(172, 5, 5);
-  }
-  .class1{
-      text-align: center;
-  }
+ .main{
+   width: 60px;
+   height: 100px;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: absolute;
+   margin: auto;
+.section{
+  font-size: 20px;
+}
+.class1{
+    text-align: center;
+}
